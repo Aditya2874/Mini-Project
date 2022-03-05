@@ -2,6 +2,14 @@
 #include <conio.h>
 #include <stdlib.h>
 #include <string.h>
+/*SET 2 Hospital management system
+Modules 
+* Patient Management
+• Doctor Management
+• Medicine and Prescription Management
+• Appointment Management
+• Medical and Transaction Management
+• Payment and Expense Management*/
 void clrscr(void)
 {
     system("cls()");
@@ -67,7 +75,7 @@ void menu()
     printf("\n\t\t0.EXIT");
     printf("\n\n\tEnter your choice: ");
     fflush(stdin);
-    choice = getche();
+    scanf("%c", &choice);
     switch (choice)
     {
     case '1':
@@ -286,7 +294,7 @@ void pat()
                         printf("\nName of the Doctor : ");
                         puts(p.doc_name);
                     }
-                } // check
+                }
                 printf("\n----------------------------------------------------");
                 printf("\nSearch another Entry(Y/N): ");
                 fflush(stdin);
@@ -379,7 +387,7 @@ void emp()
     while (1)
     {
         clrscr();
-        printf("\n\t\t\tEMPLOYEE");
+        printf("\n\t\t\t Doctor Management");
         printf("\n\t\t1.Add an Entry");
         printf("\n\t\t2.Modify Existing One");
         printf("\n\t\t3.Search an Entry");
