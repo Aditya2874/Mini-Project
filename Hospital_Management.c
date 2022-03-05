@@ -59,10 +59,8 @@ struct inventory
 void menu()
 {
     char choice;
-    printf("\t\t*************************************************");
     printf("\n\t\t  *** WELCOME TO HOSPITAL MANAGEMENT SYSTEM ***");
-    printf("\n\t\t*************************************************");
-    printf("\n\n\n\n\n\n\n");
+    printf("\n\n\n\n");
     printf("\t\t1.PATIENT");
     printf("\n\t\t2.STAFF");
     printf("\n\t\t3.INVENTORY");
